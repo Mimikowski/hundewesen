@@ -253,20 +253,6 @@ body {
   padding: 30px 10px;
 }
 
-/* Desktop Layout with vertical divider */
-@media (min-width: 778px) {
-  .contact-innen {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 10px;
-  }
-  .profile-section {
-      margin-right: 100px;
-      margin-left: 80px;
-  }
-}
-
 .profile-section {
   display: flex;
   flex-direction: column;
@@ -318,7 +304,7 @@ body {
 .contact-link {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 15px;
   color: #4a5568;
   text-decoration: none;
   transition-property: color;
@@ -335,4 +321,24 @@ body {
   border-radius: 50%;
   color: black;
   margin-right: 18px;
+}
+
+/* Desktop Layout with vertical divider */
+@media (min-width: 778px) {
+  .contact-innen {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px;
+  }
+  .profile-section {
+      margin-right: 100px;
+      margin-left: 80px;
+  }
+  .contact-link {
+   font-size: 17px;
+  }
+  .contact-link:hover{
+    font-size:17.5px;
+  } 
 }
