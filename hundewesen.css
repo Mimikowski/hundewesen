@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+ background-color:#ebf1fb;
+ color: black;
+ font-family: "merriweather", serif;
+ height: 100%;
+ margin:0;
+}
+
+.imagecontainer{
+ position: relative;
+ text-align: center;
+ color:white;
+ width: 100%;
+}
+
+.centered{
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ font-size:46px;
+}
+
+.coverimagecontainer{
+ text-align: center;
+ padding-bottom: 54%;
+ height: 80%;
+ color:white; 
+ background-image: url("../pictures/eisscholle.jpg");
+ background-attachment: fixed;
+ background-position: 0px 95%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position:relative;
+}
+  
+.coverimage{
+ width:100vw;
+ max-height:1030px;
+ object-fit:cover;
+ object-position:0px 75%;
+}
+
+/* buttons */
+
+.click{
+ color:white;
+ background-color: transparent;
+ border: 2px solid white;
+ cursor:pointer;
+ font-family: "merriweather", serif;
+ padding: 14px 38px;
+ transition:font-size 0.4s;
+ border-radius: 1px;
+}
+
+.click{
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ font-size:36px;
+}
+
+.click:hover{
+ background-color:  rgba(0,0,0,0.3);
+ font-size:40px;
+} 
+
+/* centered text */
+
+.lefttop{
+ position:absolute;
+ top:5%;
+ left:2%;
+ font-size:20px;
+}
+
+.schrift1, .schrift2, .schrift3{
+ width:100vw;
+ min-height: 350px;
+ margin-top:-5px;
+ padding-bottom:10px;
+ background-color: white;
+}
+
+.schrift1{
+  min-height:350px;
+  background-color: #f4f8ff;
+}
+
+.schrift2{
+ width:100vw;
+ min-height: 470px;
+}
+
+.schrift3{
+  min-height:490px;
+  background-color: #f4f8ff;
+}
+
+.Überschrift1{
+ position:center;
+ text-align: center;
+ font-size: 27px;
+ color:black;
+ padding-top:90px;
+ padding-bottom:40px;
+}
+
+.text1{
+ position:center;
+ font-size: 17px;
+ color:black;
+ padding-top:10px;
+ padding-bottom:90px;
+ padding-left:30px;
+ padding-right:20px;
+ line-height:1.7;
+ letter-spacing:0.5px;
+}
+
+/* KREISE mit BILDERN & Angebot */
+
+.Überschrift4{
+  position:center;
+  text-align: center;
+  font-size: 27px;
+  color:black;
+  padding-top:30px;
+  padding-bottom:140px;
+}
+
+.angebot{
+ background-color: white;
+ padding: 130px 50px;
+}
+
+.angebotinnen{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 45px;
+  row-gap: 140px;
+  font-size:18px;
+  text-align: center;
+}
+
+.angebotbilder{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  display:block;
+  transition: 0.3s;
+}
+
+.angebotbilder:hover{
+  height:265px;
+  width:265px;
+  margin:-5px;
+}
+
+.angebotinhalt a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.angebotclick{
+ color:black;
+ background-color:transparent;
+ border:0,5px;
+ cursor:pointer; 
+ font-family:"merriweather", serif;
+ padding: 10px 30px;
+ transition:font-size 0.4s;
+ font-size:25px;
+ margin:30px 0px;
+}
+
+.angebotclick:hover{
+  background-color:  rgba(189, 208, 243, 0.3);
+  font-size:27px;
+} 
+
+.linkcontainer{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:250px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* Bilder */
+
+.look{
+ width:100vw;
+ max-height:670px;
+ object-fit:cover;
+ object-position:0px 20%;
+}
+
+.elsaschleppleine{
+ width:100vw;
+ max-height:620px;
+ object-fit:cover;
+ object-position:0px 65%;
+}
+
+.kontakt{
+ width:100vw;
+ max-height:750px;
+ object-fit:cover;
+ object-position:0px 40%;
+}
+
+
+.Berlin{
+  font-size:22px;
+}
+
+@media (max-width: 768px) {
+ .Berlin{
+  font-size: 12px;
+}}
+   
+@media (max-width: 768px) {
+  .centered{
+   font-size: 27px;
+  }
+  .Überschrift1{
+    font-size: 19px;
+    padding-top:70px;
+    padding-bottom:25px;
+  }
+}
+
+ @media (max-width: 768px) {
+  .text1, .lefttop{
+   font-size: 13px;
+   padding-bottom: 60px;
+  }
+  .click{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgba(107, 107, 107, 0.4);
+  }
+  .click:hover{
+    font-size: 24px;
+  }
+  .coverimagecontainer{
+    background-attachment: scroll; /* Background scrolls with the page */
+    background-position: center center; 
+  }
+}
+
+@media (max-width: 768px) {
+  .angebotbilder{
+    height: 140px;
+    width: 140px;
+  }
+  .angebotbilder:hover{
+   height:155px;
+   width:155px;
+   margin:-5px;
+  }
+  .angebotinnen{
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 2px;
+    row-gap: 55px;
+  }
+  .angebot{
+    padding:50px 25px;
+  }
+  .Überschrift4{
+    padding-top:30px;
+    padding-bottom:50px;
+    font-size: 19px;
+  }
+  .angebotclick{
+    font-size:15px;
+    padding: 7px 15px;
+    margin:15px;
+  }
+  .angebotclick:hover{
+    font-size:17px;
+  }
+  .angebotinhalt{
+    font-size: 12px;
+  }
+  .linkcontainer{
+    width:140px;
+
+  }
+}
+
+/* Buttons fehlen jetzt noch in mobiler Version. Dann ggfs bis zu zwei Angebote nebeneinander. 
+Dann möchte ich Menue bar bzw in mobiler Version burger Menue.
+Dann Kontakt Seite, mit Impressum und Datenschutz Erklärung
+Dann fertig. 
+
+/* KONTAKTKARTE */
+
+
+.contact-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 650px;
+  padding: 32px;
+  flex-direction: column;
+}
+
+.Überschrift2{
+  position:center;
+  text-align: center;
+  font-size: 25px;
+  color:black;
+  padding:40px 10px 20px 20px;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.contact-innen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+/* Desktop Layout with vertical divider */
+@media (min-width: 778px) {
+  .contact-innen {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px;
+  }
+  .profile-section {
+      margin-right: 100px;
+      margin-left: 80px;
+  }
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
+
+.profile-image-container {
+  width: 210px;
+  height: 210px;
+  border-radius: 9999px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 22px;
+  color: black;
+}
+
+.contact-links {
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.contact-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links li {
+  margin-bottom: 16px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4a5568;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition:0,4s;
+}
+
+.contact-link:hover {
+  color: black;
+  font-size:18.5px;
+}
+
+.icon-container {
+  padding: 12px;
+  background-color: #f4f8ff;;
+  border-radius: 50%;
+  color: black;
+  margin-right: 18px;
+}
