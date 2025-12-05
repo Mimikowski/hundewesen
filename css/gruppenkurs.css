@@ -186,9 +186,9 @@ body {
 
 .work{
   width:100vw;
-  max-height:650px;
+  max-height:620px;
   object-fit:cover;
-  object-position: 0px 42%;
+  object-position: 0px 32%;
   }
 
 .mark{
