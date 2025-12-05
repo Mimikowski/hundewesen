@@ -195,7 +195,7 @@ body {
   width:100vw;
   max-height:640px;
   object-fit:cover;
-  object-position:0px 27%;
+  object-position:0px 7%;
   }
 
 @media (max-width: 768px) {
