@@ -165,7 +165,7 @@ body {
 
 .top{
   width:100vw;
-  max-height:950px;
+  max-height:830px;
   object-fit:cover;
   object-position:0px 25%;
   }
@@ -193,7 +193,7 @@ body {
 
 .mark{
   width:100vw;
-  max-height:650px;
+  max-height:640px;
   object-fit:cover;
   object-position:0px 27%;
   }
